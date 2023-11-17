@@ -1,7 +1,7 @@
 
 const getBooks = async () => {
     try {
-        const response = await axios.get('http://localhost:3000/books');
+        const response = await axios.get('https://prueba-5csg.onrender.com/books');
         const books = response.data;
         const list = document.getElementById('bookList');
         books.forEach(book => {
@@ -23,7 +23,7 @@ getBooks();
 const getUser = async () => {
     
     try {
-        const response = await axios.get('http://localhost:3000/users');
+        const response = await axios.get('https://prueba-5csg.onrender.com/users');
         const users = response.data;
         const list = document.getElementById('usersList');
         users.forEach(user => {
