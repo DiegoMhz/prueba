@@ -25,6 +25,8 @@ DROP TABLE empleados
 
 
 
+
+
 CREATE TABLE departamentos (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(100),
@@ -40,6 +42,8 @@ INSERT INTO departamentos VALUES
 
 DELETE FROM departamentos;
 DROP TABLE departamentos 
+
+
 
 
 
@@ -59,6 +63,11 @@ INSERT INTO puestos (nombre, descripcion, remuneracion) VALUES
 DELETE FROM puestos;
 DROP TABLE puestos; 
 
+
+
+
+
+
 CREATE TABLE tareas (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(100),
@@ -74,6 +83,10 @@ INSERT INTO tareas VALUES
 
 DELETE FROM tareas;
 DROP TABLE tareas
+
+
+
+
 
 
 CREATE TABLE habilidades (
