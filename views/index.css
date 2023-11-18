@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(html_table.jpg);
+    background-size: cover;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+
+.contenedor-listas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff94;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 5px gray;
+    width: 60%;
+}
+
+.contenedor-listas h1{
+    font-size: 1.5rem
+    ;
+}
+
+ul{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
