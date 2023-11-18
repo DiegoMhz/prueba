@@ -1,21 +1,23 @@
-// app.js
-
 
 const listaEmpleados = document.getElementById('lista-empleados');
 const listaDepartamentos = document.querySelector('#listaDepartamentos');
 const listaHabilidades = document.querySelector('#listaHabilidades');
 const listaPuestos = document.querySelector('#listaPuestos');
 const listaTareas = document.querySelector('#listaTareas');
-console.log(listaTareas);
+
+
 const getDatos = async () => {
+
     try {
+
       const response = await fetch('/empleados');
       const empleados = await response.json();
       const departamentos = await (await fetch('/departamentos')).json()
       const habilidades = await (await fetch('/habilidades')).json()
       const puestos = await (await fetch('/puestos')).json()
       const tareas  = await (await fetch('/tareas')).json()
-    console.log(tareas);
+
+
       empleados.forEach(trabajador => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<b>Nombre:</b> ${trabajador.nombre}<br>
@@ -27,6 +29,8 @@ const getDatos = async () => {
         listaEmpleados.appendChild(listItem);
       });
 
+
+
       departamentos.forEach(element => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<b>Nombre:</b> ${element.nombre}<br>
@@ -34,6 +38,8 @@ const getDatos = async () => {
         <b>Descripcion:</b>${element.descripcion}<br>`;
         listaDepartamentos.appendChild(listItem);
       });
+
+
 
       habilidades.forEach(element => {
         const listItem = document.createElement('li');
@@ -43,6 +49,8 @@ const getDatos = async () => {
         listaHabilidades.appendChild(listItem);
       });
 
+
+
       puestos.forEach(element => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `<b>Nombre:</b> ${element.nombre}<br>
@@ -50,6 +58,8 @@ const getDatos = async () => {
         <b>Fecha De Adquisicion:</b>${element.descripcion}<br>`;
         listaPuestos.appendChild(listItem);
       });
+
+
 
       tareas.forEach(element => {
         const listItem = document.createElement('li');
