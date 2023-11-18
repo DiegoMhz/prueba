@@ -75,10 +75,10 @@ app.get('/obtenerdatos', async (req, res) => {
   try {
     const client = new Client({
       user: 'postgres',
-      host: 'viaduct.proxy.rlwy.net',
+      host: 'roundhouse.proxy.rlwy.net',
       database: 'railway',
-      password: '4C5DaBfga--ADEEAbB64GB1-aAc3gdDB',
-      port: '12468',
+      password: 'eabEDfG*536E*3C2a*g6gc*343G-db3B',
+      port: '56155',
     });
 
     await client.connect();
@@ -98,3 +98,4 @@ app.get('/obtenerdatos', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
