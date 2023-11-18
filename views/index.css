@@ -51,3 +51,23 @@ ul{
     gap: 2rem;
     justify-content: center;
 }
+
+
+@media (max-width: 800px) {
+    .contenedor-listas{
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .contenedor-listas{
+        width: 70%;
+    }
+  }
+
+  
+  @media (max-width: 650px) {
+    .contenedor-listas{
+        width: 100%;
+    }
+  }
